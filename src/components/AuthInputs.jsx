@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import {styled} from 'styled-components'
 
+styled.div``
 export default function AuthInputs() {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPassword, setEnteredPassword] = useState('');
