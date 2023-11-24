@@ -1,4 +1,6 @@
-import {styled} from "styled-components";
+import { styled } from "styled-components";
+
+
 
 
 const Label = styled.label`
@@ -24,9 +26,9 @@ const Input = styled.input`
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 `
 
-export default function CustomInput({label,invalid, ...props}){
-    return<p>
+export default function CustomInput({ label, invalid, ...props }) {
+    return <p>
         <Label $invalid={invalid}>{label}</Label>
-        <Input  {...props}/>
+        <Input  {...props} />
     </p>
 }
